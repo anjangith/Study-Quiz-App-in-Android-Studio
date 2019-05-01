@@ -1,0 +1,427 @@
+<resources>
+    <string name="app_name">C++ FOR BEGINNERS</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="basic">BASICS OF C++</string>
+    <string name="basic1">C++ is a middle-level programming language developed by Bjarne Stroustrup
+        starting in 1979 at Bell Labs. C++ runs on a variety of platforms, such as Windows, Mac OS,
+        and the various versions of UNIX. This tutorial adopts a simple and practical
+        approach to describe the concepts of C++</string>
+    <string name="variables">A variable provides us with named storage that our programs can manipulate.
+    Each variable in C++ has a specific type, which determines the size and layout of the variable\'s
+    memory; the range of values that can be stored within that memory; and the set of operations that can be
+    applied to the variable.\n\n
+
+The name of a variable can be
+    composed of letters, digits, and the underscore
+    character. It must begin with either a letter or an underscore.\n
+    Upper and lowercase letters are distinct because C++ is case-sensitive</string>
+    <string name="examplevar">int x;\n Here x is the name of variable and
+    int is the data type</string>
+    <string name="typesofd"><b>Primitive Data Types:</b> These data types are built-in or predefined data types and can be used directly by the user to declare variables. example: int, char , float, bool etc.\n
+
+
+
+
+\n
+<b>Abstract or user defined data type:</b> These data types are defined by user itself. Like, defining a class in C++ or a structure</string>
+    <string name="datatype">All variables use data-type during declaration to restrict the type of data to be stored.
+        Therefore, we can say that data types are used to tell the variables the type of data it can store.
+Whenever a variable is defined in C++, the compiler allocates some memory for that
+        variable based on the data-type with which it is declared.\n Every data type requires
+        different amount of memory.</string>
+
+    <string name="inputandoutput">C++ comes with libraries which provides us many ways for performing input and output. In C++ input and output is performed in the form of sequence of bytes or more commonly known as streams.\n\n
+
+<b>Input Stream</b>: If the direction of flow of bytes is from device(for example: Keyboard) to the main memory then this process is called input.\n\n
+
+<b>Output Stream:</b> If the direction of flow of bytes is opposite, i.e. from main memory to device( display screen ) then this process is called output.\n\n
+
+Header files available in C++ for Input – Output operation are:\n\n
+
+iostream: iostream stands for standard input output stream. This header file contains definitions to objects like cin, cout, cerr etc.\n\n
+iomanip: iomanip stands for input output manipulators. The methods declared in this files are used for manipulating streams. This file contains definitions of setw, setprecision etc.\n\n
+fstream: This header file mainly describes the file srteam. This header file is used to handle the data being read from a file as input or data being written into the file as output.\n\n
+In C++ articles, these two keywords cout and cin  are used very often for taking inputs and printing outputs. These two are the most basic methods of taking input and output in C++. For using cin and cout we must include the header file iostream in our program</string>
+    <string name="cin">
+    Usually the input device is the keyboard. cin is the instance of the class istream and is used to read input from the standard input device which is usually keyboard.
+The extraction operator(>>) is used along with the object cin for reading inputs. The extraction operator extracts the data from the object cin which is entered using the keboard.
+</string>
+    <string name="cout"> Usually the standard output device is the display screen. cout is the instance of the ostream class.
+        cout is used to produce output on the standard output device which is usually
+        the display screen. The data needed to be displayed on the screen is inserted in the standard
+        output stream (cout) using the insertion operator \n\n
+   Example:
+    </string>
+    <string name="operator">An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations. C++ is rich in built-in operators and provide the following types of operators −\n\n
+
+Arithmetic Operators\n
+Relational Operators\n
+Logical Operators\n
+Bitwise Operators\n
+Assignment Operators\n
+Misc Operators\n</string>
+
+    <string name="ope">Arithmetic Operators: These are the operators used to perform arithmetic/mathematical operations on operands. Examples: (+, -, *, /, %,++,–).
+Arithmetic operator are of two types:\n\n
+Unary Operators: Operators that operates or works with a single operand are unary operators.\n
+For example: (++ , –)\n\n
+Binary Operators: Operators that operates or works with two operands are binary operators.For example: (+ , – , * , /)\n\n
+
+
+Relational Operators: Relational operators are used for comparison of the values of two operands.
+Logical Operators:  Logical Operators are used to combine two or more conditions/constraints or to complement the evaluation of the original condition in consideration. The result of the operation of a logical operator is a boolean value either true or false. To learn about different logical operators in details please visit this link.\n\n
+Bitwise Operators: The Bitwise operators is used to perform bit-level operations on the operands. The operators are first converted to bit-level and then calculation is performed on the operands. The mathematical operations such as addition , subtraction , multiplication etc. can be performed at bit-level for faster processing.\n\n
+Assignment Operators: Assignment operators are used to assign value to a variable. The left side operand of the assignment operator is a variable and right side operand of the assignment operator is a value. The value on the right side must be of the same data-type of variable on the left side otherwise the compiler will raise an error.</string>
+    <string name="arrays">Array is a collection of data of same types stored in sequential memory location. It is a linear data
+        structure, where data is stored sequentially one after the other. The elements in an array is accessed using an index.
+        For example, In an array of n elements, the first element has index zero and the last element has index (n-1).
+        Elements with consecutive index (i.e. i and i+1) are stored in consecutive memory location in the system.</string>
+    <string name="oned">A one-dimensional array is a group of elements having the same datatype and same name.
+        Individual elements are referred to using common name and unique index of the elements.\n\n
+
+   <b>Declare One Dimensional Array in C++</b>\n\n
+
+Here is the general form to declare one dimensional array in C++\n\n
+
+data_type array_name[array_size];
+    </string>
+    <string name="twod">A two-dimensional array is an array in which each element is itself a 1-D array.\n\n
+
+<b>Declare Two Dimensional Array in C++</b>\n
+
+Here is the general form to declare two dimensional array in C++\n\n
+
+data_type array_name[row_size][column_size];</string>
+    <string name="strings">In C++, the one-dimensional array of characters are called strings,
+        which is terminated by a null character </string>
+    <string name="stringx">Strings Declaration in C++
+There are two ways to declare a string in C++:\n
+
+Example:
+Through an array of characters:\n
+
+char greeting[6];\n
+Through pointers:\n
+
+char *greeting;\n\n
+Strings Initialization in C++\n
+Example:\n\n
+char greeting[6] = {\'C\', \'l\', \'o\', \'u\', \'d\', \'\0\'};\n
+or\n\n
+
+char greeting[] = "Cloud";</string>
+
+
+
+
+    <string name="function">
+        A function is a group of statements that together perform a task. Every C++ program has at least one function, which is main(), and all the most trivial programs can define additional functions.\n\n
+
+You can divide up your code into separate functions. How you divide up your code among different functions is up to you, but logically the division usually is such that each function performs a specific task.\n\n
+
+A function declaration tells the compiler about a function\'s name, return type, and parameters. A function definition provides the actual body of the function.\n\n
+
+The C++ standard library provides numerous built-in functions that your program can call. For example, function strcat() to concatenate two strings, function memcpy() to copy one memory location to another location and many more functions.\n\n
+    </string>
+    <string name="declare">In the above program the function outside of main is known as function
+    definition and inside the main main we declare the function which is known as function declaration</string>
+    <string name="oop">Object oriented programming – As the name suggests uses objects in programming. Object oriented programming aims to implement real world
+        entities like inheritance,
+        hiding, polymorphism etc in programming. The main aim of. OOP is to bind together the data and the functions
+        that operates on them so that no other part of code can access this data except that function.</string>
+    <string name="objects"><b>Object:</b> Objects are basic run-time entities in an object oriented system,
+        objects are instances of a class these are defined user defined data types.</string>
+    <string name="obj">Object take up space in memory and have an associated address like a record in pascal or structure or union in C.\n\n
+
+When a program is executed the objects interact by sending messages to one another.\n\n
+
+Each object contains data and code to manipulate the data. Objects can interact without having to know details of each others data or code,
+        it is sufficient to know the type of message accepted and type of response returned by the objects.\n\n
+
+</string>
+    <string name="classs"> Class is a blueprint of data and functions or methods. Class does not take any space.
+
+\nsyntax for class:</string>
+    <string name="clone">Class is a user defined data type like structures and unions in C.\n
+
+By default class variables are private but in case of structure it is public. in above example person is a class.
+
+</string>
+    <string name="encapsulation"> Wrapping up(combing) of data and functions into a single unit is known as encapsulation. The data is not accessible to the outside world and only those functions which are wrapping in the class can access it. This insulation of the data from direct access by the program is called data hiding or information hiding.\n\n
+
+Data abstraction refers to, providing only needed information to the outside world and hiding implementation details. For example, consider a class Complex with public functions as getReal() and getImag(). We may implement the class as an array of size 2 or as two variables. The advantage of abstractions is, we can change implementation at any point, users of Complex class wont’t be affected as out method interface remains same. Had our implementation be public, we would not have been able to change it.
+
+</string>
+    <string name="inheritance"> inheritance is the process by which objects of one class acquire the properties of objects of another class. It supports the concept of hierarchical classification. Inheritance provides re usability. This means that we can add additional features to an existing class without modifying it.</string>
+    <string name="polymorphism">polymorphism means ability to take more than one form. An operation may exhibit different behaviors in different instances. The behavior depends upon the types of data used in the operation.
+C++ supports operator overloading and function overloading.\n
+Operator overloading is the process of making an operator to exhibit different behaviors in different instances is known as operator overloading.\n\n
+Function overloading is using a single function name to perform different types of tasks.\n
+polymorphism is extensively used in implementing inheritance.</string>
+    <string name="data"> In dynamic binding, the code to be executed in response to function call is decided at runtime. C++ has virtual functions to support this.
+
+</string>
+    <string name="message"> Objects communicate with one another by sending and receiving information to each other. A message for an object
+        is a request for execution of a procedure and therefore will invoke a function in the receiving object that generates the desired results.
+        \n Message passing involves specifying the name of the object, the name of the function and the information to be sent.</string>
+    <string name="POINTER">C and C++ support pointers which is different from most of the other programming languages. Other languages including C++, Java, Python, Ruby, Perl and PHP support references.\n\n
+
+On the surface, both references and pointers are very similar, both are used to have one variable provide access to another. With both providing lots of same capabilities, it’s often unclear what is different between these different mechanisms. In this article, I will try to illustrate the differences between pointers and references.</string>
+    <string name="point">A pointer is a variable that holds memory address of another variable. A pointer needs to be dereferenced with * operator to access the memory location it points to.</string>
+    <string name="reference">A reference variable is an alias, that is, another name for an already existing variable. A reference, like a pointer is also implemented by storing the address of an object.
+A reference can be thought of as a constant pointer (not to be confused with a pointer to a constant value!) with automatic indirection, i.e the compiler will apply the * operator for you.</string>
+    <string name="dynamic">Suppose you want to put a toy in a box, but you only have an approximate idea of its size. For that, you would require a box whose size is equal to the approximate size of the toy.
+
+We face a similar situation in C++ also when we want to input a sentence as an array of characters but are not sure about the number of characters in the array.\n\n
+
+Now, while declaring the character array, if we specify its size smaller than the size of the input string, then we will get an error because the space in the memory allocated to the array is lesser than the size of the input string. This is the same case as trying to fit a big toy in a smaller box. If we specify its size much larger than the size of the input string, then the array will be allocated a space in the memory which is much larger than the size of the input string, thus unnecessarily consuming more memory even when it is not required. This is like putting a small toy in a large box.\n\n
+
+In the above case, we don\'t have the idea about the size of the array until the compile time (when computer compiles the code and the string is input by the user). In such cases, we use the new operator.\n\n
+
+But before going to the new operator, let\'s have a look at the two parts in which our memory is divided. These parts are as follows:\n\n
+
+<b>STACK</b> - Memory from the stack is used by all the members which are declared inside functions. Note that main is also a function.\n\n
+<b>HEAP</b> - This memory is unused and can be used to dynamically allocate the memory at runtime.\n\n</string>
+    <string name="neww">The new operator is used to allocate memory at runtime. The memory is allocated in bytes.
+
+Let\'s first see how to allocate a variable dynamically.\n\n
+
+int *ptr = new int;\n\n
+
+By writing new int, we allocated the space in memory required by an integer. Then we assigned the address of that memory to an integer pointer ptr.\n\n
+
+We assign value to that memory as follows:\n\n
+
+*ptr = 4;\n\n
+
+Thus, we allocated that much space in memory that would be required by an int and then assigned the address of that memory to a pointer ptr and assigned the memory a value 4.\n\n</string>
+    <string name="delete">Suppose we allocated some memory to a variable dynamically and then we realize that the variable is not needed anymore in the program. In that case, we need to free the memory which we had assigned to that variable. For that, we use the delete operator.\n\n
+
+It is advised to free the dynamically allocated memory after the program finishes so that it becomes available for future use.\n\n
+
+To delete the memory assigned to a variable, we simply need to write the following code.\n\n
+
+delete ptr;\n\n
+
+Here ptr is the pointer to the dynamically allocated variable.\n\n
+There is nothing much to understand in this. The delete operator simply returns the memory allocated back to the operating system so that it can be used again\n\n</string>
+    <string name="program">PROGRAM TO STORE DATA USING DYNAMIC MEMORY ALLOCATION</string>
+    <string name="overload">If any class have multiple functions with same names but different parameters then they are said to be overloaded. Function overloading allows you to use the same name for different functions, to perform, either same or different functions in the same class.\n\n
+
+Function overloading is usually used to enhance the readability of the program. If you have to perform one single operation but with different number or types of arguments, then you can simply overload the function</string>
+    <string name="send">send</string>
+    <string name="scope">Scope resolution operator(::) is used to define a function outside a class
+        or when we want to use a global variable but also has a local variable with same name.</string>
+    <string name="header">Header files contain definitions of Functions and Variables, which is imported or
+        used into any C++ program by using the pre-processor #include statement.
+        Header file have an extension ".h" \t which contains C++ function declaration and macro definition.</string>
+    <string name="head">Each header file contains information (or declarations) for a particular group of functions.
+        Like stdio.h header file contains declarations of standard input and output functions available in C++ which is used for get the input and print the output.
+        Similarly, the header file math.h contains declarations of mathematical functions available in C++.</string>
+    <string name="share">Share</string>
+    <string name="hello_program">   #include \u003Ciostram\u003E;\n
+                                    using namespace std;\n
+
+                                    int main() \n
+                                    {\n
+                                    cout \u003C\u003C "Hello, World!";\n
+                                     return 0;\n
+                                    }</string>
+
+    <string name="length_program">
+        #include \u003Ciostream\u003E\n
+using namespace std;\n
+
+int main()\n
+{\n
+    string str = "C++ Programming";\n\n
+
+    // you can also use str.length()\n\n
+    cout \u003C\u003C "String Length = " \u003C\u003C str.size();\n
+
+    return 0;\n
+}
+
+
+    </string>
+
+    <string name="prime_program">
+
+#include\u003Ciostream.h\u003E\n
+#include\u003Cconio.h\u003E\n
+void main()\n
+{\n\n
+	int num,i,count=0;\n
+	cout\u003C\u003C"Enter a number:";\n
+	cin\u003E\u003Enum;\n
+	for(i=2;i\u003Cnum;i++)\n
+	{\n
+		if(num%i==0)\n
+		{\n\n
+			count++;\n
+			break;\n
+		}\n\n
+	}\n
+	if(count==0)\n
+	{\n
+		cout\u003C\u003C"This is a prime number";\n
+	}\n
+	else\n
+	{\n
+		cout\u003C\u003C"This is not a prime number";\n
+	}\n
+	\n
+}
+
+    </string>
+
+    <string name="odd_program">
+
+
+#include\u003Ciostream.h\u003E\n
+void main()\n
+{\n\n
+
+	int num;\n
+	cout\u003C\u003C"Enter a number :";\n
+	cin\u003E\u003Enum;\n
+	if(num%2==0)\n
+	{\n
+		cout\u003C\u003C"This is an even number";\n
+	}\n
+	else\n
+	{\n
+		cout\u003C\u003C"This is an odd number";\n
+	}\n
+	\n
+}
+    </string>
+
+
+    <string name="swap_program">
+
+
+#include\u003Ciostream.h\u003E\n
+void main()\n
+{\n\n
+
+	int num1, num2, swap;\n
+	cout\u003C\u003C"Enter two number : ";\n
+	cout\u003C\u003C"\nFirst Number : ";\n
+	cin\u003E\u003Enum1;\n
+	cout\u003C\u003C"Second Number : ";\n
+	cin\u003E\u003Enum2;\n
+	swap=num1;\n
+	num1=num2;\n
+	num2=swap;\n
+	cout\u003C\u003C"The value of first and second number after swapping is \n";\n
+	cout\u003C\u003C"First Number = "num1\u003C\u003C"\n"\u003C\u003C"Second Number = "\u003C\u003Cnum2;\n
+	getch();\n
+}\n
+    </string>
+
+
+    <string name="series_program">
+        #include\u003Ciostream.h\u003E\n
+#include\u003Cconio.h\u003E\n
+void main()\n
+{\n\n
+
+	int a=0, b=1, c=0, limit;\n
+	cout\u003C\u003C"Upto How many term ? ";\n
+	scanf("%d",\u0026limit);\n
+	cout\u003C\u003C"Fabonacci Series : "\u003C\u003Ca\u003C\u003C" "b\u003C\u003C" ";  // first two term\n
+	c=a+b;\n
+	limit=limit-2;   // decrease the limit by 2. since two numbers already printed\n
+	while(limit)\n
+	{\n
+		cout\u003C\u003Cc\u003C\u003C" ";\n
+		a=b;\n
+		b=c;\n
+		c=a+b;\n
+		limit--;\n
+	}\n
+	\n
+}
+
+    </string>
+
+    <string name="binary_program">
+        #include\u003Ciostream.h\u003E
+#include\u003Cconio.h\u003E
+void main()
+{
+
+	long int binnum, decnum=0, i=1, rem;
+	cout\u003C\u003C"Enter any binary number : ";
+	cin\u003E\u003Ebinnum;
+	while(binnum!=0)
+	{
+		rem=binnum%10;
+		decnum=decnum+rem*i;
+		i=i*2;
+		binnum=binnum/10;
+	}
+	cout\u003C\u003C"Equivalent decimal value = "\u003C\u003Cdecnum;
+
+}
+
+    </string>
+
+    <string name="class_program">
+        #include \u003Ciostream \u003E\n
+using namespace std;\n
+class Geeks\n
+{\n
+    // Access specifier\n
+    public:\n\n
+
+    // Data Members\n
+    string geekname;\n
+
+    // Member Functions()\n\n
+    void printname()\n
+    {\n
+       cout  \u003C \u003C "Geekname is: "  \u003C \u003C geekname;\n
+    }\n
+};\n
+ \n
+int main() {\n
+
+    // Declare an object of class geeks\n
+    Geeks obj1;\n
+
+    // accessing data member\n
+    obj1.geekname = "Abhi";\n
+ \n
+    // accessing member function\n
+    obj1.printname();\n
+    return 0;\n
+}\n
+
+    </string>
+
+    <string name="dynamic_progran">
+        #include \u003Ciostream\u003E\n\n
+using namespace std;\n
+
+class Box {\n
+   public:\n
+      Box() { \n
+         cout \u003C\u003C "Constructor called!" \u003C\u003Cendl; \n
+      }\n
+      ~Box() { \n
+         cout \u003C\u003C "Destructor called!" \u003C\u003Cendl; \n
+      }\n
+};\n
+int main() {\n
+   Box* myBoxArray = new Box[4];\n
+   delete [] myBoxArray; // Delete array\n
+\n
+   return 0;\n
+}\n
+    </string>
+    <string name="title_activity_bundle">BundleActivity</string>
+
+</resources>
